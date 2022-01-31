@@ -44,7 +44,33 @@ A gif of flashing QRs is given.
 
 1. Opening the `gif` as a pdf showed the different frames
 2. Scanning each frame gives a character, when put together will give the flag
+- I created a snipet of code that takes the frames and print the string :
+```python
+import  cv2, os
 
+def do(file) : 
+    filename = file
+    image = cv2.imread(filename)
+    detector = cv2.QRCodeDetector()
+    data, vertices_array, binary_qrcode = detector.detectAndDecode(image)
+    if vertices_array is not None:
+          print(data , end="")
+    else:
+          print("There was some error") 
+
+if __name__=="__main__" : 
+    path="you path to frames"
+    os.chdir(path)
+    files = os.listdir(path)
+    i = 0 
+    for file in files : 
+        os.rename(file , path + str(i) + '.png')
+        do(path + str(i) + '.png')
+        i+=1
+```
+
+The result was : }pvznalq_bg_pvgngf_zbes_qriybir_gbt_rqbp_ED{SGPX
+Reverse it and rot 13 
 ### Flag
 
 ```
