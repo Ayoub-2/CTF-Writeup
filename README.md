@@ -14,4 +14,4 @@ Mymembers where quite strong , we got a nice rank.
 
 Placed: 41th out of 752 teams
 
-![score](./images/cert.jpg)
+![score](./KnightCTF/images/cert.jpg)
