@@ -1,5 +1,5 @@
 # UTCTF
-Organised by [UCTF](https://www.isss.io)
+Organised by [ISSS](https://www.isss.io)
 
 Team : **BCL1**
 
