@@ -12,6 +12,6 @@ The categories that I tried were Reversing, Crypto, OSINT, Web, Misc, Programmin
 
 Mymembers where quite strong , we got a nice rank.
 
-Placed: 41th out of 752 teams
+Placed: **41th** out of **752** teams
 
-![score](./KnightCTF/images/cert.jpg)
+![score](./images/cert.jpg)
