@@ -14,5 +14,5 @@ Rank : 148th out of 560
 > | ----------- | ----------- | ------- |
 > | [Websockets?](./Web/README.md#1--websockets) | web |easy    |
 > | [HTML2PDF](./Web/README.md#2--html2pdf)    | web | meduim  | 
-> | Public Panic 1 | misc | easy|
-> | Public Panic 2 | musc | easy |
+> | [Public Panic 1](./Misc/README.md#1--public-panic-1) | misc | easy|
+> | [Public Panic 2](./Misc/README.md#2--public-panic-2) | musc | easy |
