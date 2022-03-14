@@ -8,7 +8,7 @@
 - Website : http://web1.utctf.live:8651
 </br>
 
-in login page **/internale/login** i found theis code js for login : 
+in login page **/internale/login** i found this code js for login : 
 ```js
 document.querySelector("input[type=submit]").addEventListener("click", checkPassword);
 
@@ -99,9 +99,9 @@ x.send();
 document.getElementById('test2').innerHTML= x.responseText;
 </script>
 ```
-basically what this do is fetch the file (internal) using javascript XMLHttpRequest class to get contenu before convert the page to pdf 
+basically what this do is fetch the file (internal) using javascript XMLHttpRequest class to get content before convert the page to pdf 
 
-it worked. so now we have a basic LFI , so i chacked what privileges do i have , so i tried **/etc/shadow** and it worked , Nice 
+it worked. so now we have a basic LFI , so i checked what privileges do i have , so i tried **/etc/shadow** and it worked , Nice 
 
 <center><img src="../images/html2pdf_shadow.png"></img></center>
 
