@@ -1,6 +1,6 @@
 # Ctf Writeup
 
-Serie of writeup for challenges , escpacially web and misc categories : 
+Serie of writeup for challenges , especially web and misc categories : 
 
 > | name        | Ctftime event |    
 > | ----------- | ----------- 
