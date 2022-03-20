@@ -202,3 +202,38 @@ params = (
 response = requests.get('http://52.59.229.252:1234/index.php', headers=headers, params=params, verify=False)
 print(response.text)
 ```
+
+
+## 2- Obfjustu 
+
+#### about : 
+- Type: Web 
+- Level: easy 
+- Website: http://52.59.254.46:1245/
+- points: 50
+
+
+when we first open the website , It has a graphical CLI, we can see the available commads using /help
+
+<center><img src="../images/Obfjustu.png"></img></center>
+
+in the source code , i found the javascript responsible for the fonctions , an obfuscated part was revealuing itself : 
+
+```js 
+var _cs = ["\x6a\x53", "\x31\x30\x6e", "\x66\x75", "\x5f\x77", "\x30\x6d\x33", "\x43\x6c\x69", "\x48\x5f\x73", "\x7b\x30\x62", "\x61\x67", "\x33", "\x66\x6c", "\x31\x74", "\x65\x6e\x74", "\x73\x63", "\x77\x45\x4c", "\x4c\x63", "\x30\x6d", "\x61\x74", "\x7d", "\x67\x74\x68", "\x67\x74", "\x63\x61\x6c", "\x6c\x6f", "\x68", "\x6c\x65\x6e", "\x6d\x70", "\x65", "\x61\x72", '\x67\x65\x6f', "\x65\x43\x6f"];
+var _xxg0 = _cs[10] + _cs[8] + _cs[7] + _cs[2] + _cs[13] + _cs[17] + _cs[1] + _cs[3] + _cs[11] + _cs[6] + _cs[4] + _cs[0] + _cs[18];
+
+function _xxf0(_xxp1, _xxp0) {
+    if (_xxp1[_cs[24] + _cs[19]] !== _xxp0[_cs[24] + _cs[20] + _cs[23]]) {
+        return false;
+    }
+    return _xxp1[_cs[22] + _cs[21] + _cs[29] + _cs[25] + _cs[27] + _cs[26]](_xxp0) === 0;
+}
+if (_xxf0(_xxg0, word[2])) {
+    log(_cs[5] + _cs[12], _cs[14] + _cs[15] + _cs[16] + _cs[9]);
+}
+```
+
+put it in the console (we are not analyzinf before getting the general idea) and we got the flag  :) : 
+
+<center><img src="../images/flag_obfjustu.png"></img></center>
