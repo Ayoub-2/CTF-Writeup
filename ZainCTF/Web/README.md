@@ -106,9 +106,9 @@ it gives :
 
 > <b>Warning</b>:  chdir(): open_basedir restriction in effect. File(../) is not within the allowed path(s): (/var/www/html) in <b>/var/www/html/index.php(12) : eval()'d code(3) : eval()'d code</b> on line <b>3</b><br />
 
-now thats a lockdown , ok it says somethign base_dir prevents us from getting the parent files , i tried many thing , but if we look in disabled_functions we wil find that we can't upload nor execute system commands , pretty bad.
+now thats a lockdown , ok it says something base_dir prevents us from getting the parent files , i tried many thing , but if we look in disabled_functions we wil find that we can't upload nor execute system commands , pretty bad.
 
-disabled function : 
+disabled functions : 
 >system, pcntl_signal_dispatch,  posix_uname,  chgrp,  posix_setsid, pcntl_wifcontinued, readlink, proc_open, pcntl_exec, pcntl_wstopsig, imap_open, tempnam, passthru,  chown, pcntl_wifexited, show_source,  popen, pcntl_async_signals, exec, posix_mkfifo, pcntl_wexitstatus, touch,  posix_mkfifo, copy, pcntl_sigprocmask, file, pcntl_sigwaitinfo, fopen, pcntl_wifsignaled, define_syslog_variables, tmpfile, pcntl_exec, pcntl_waitpid, imagecolormatch, popen,  pg_lo_import, readfile, ftp_ssl_connect,  dbmopen, apache_setenv, link, pcntl_fork, pcntl_signal, parse_ini_file,  proc_terminate, curl_multi_exec, pcntl_setpriority, rename, file_put_contents, pcntl_getpriority, pcntl_signal_get_handler, curl_exec, pcntl_strerror,  proc_close,  proc_nice, pcntl_sigtimedwait,  posix_getpwuid, pcntl_get_last_error,  symlink,  pclose,  dbase_open,  posix_kill, pcntl_alarm, ftp_connect,  chmod, shell_exec, pcntl_wait,  posix_setpgid, pcntl_wtermsig, pcntl_wifstopped
 
 i searched and found this [github](https://github.com/carlospolop/hacktricks/blob/master/pentesting/pentesting-web/php-tricks-esp/php-useful-functions-disable_functions-open_basedir-bypass/README.md) repo , it was pretty handy , i tried and it worked : 
