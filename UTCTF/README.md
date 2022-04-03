@@ -2,7 +2,7 @@
 Organised by [ISSS](https://www.isss.io)
 
 ### Challenges  :
-> | name        | Category    | Level   |
+> | Name        | Category    | Level   |
 > | ----------- | ----------- | ------- |
 > | [Websockets?](./Web/README.md#1--websockets) | web |easy    |
 > | [HTML2PDF](./Web/README.md#2--html2pdf)    | web | meduim  | 

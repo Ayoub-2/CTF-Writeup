@@ -2,7 +2,7 @@
 Organised by Zain Innovation campus
 
 ### Challenges  :
-> | name        | Category    | Level   |
+> | Name        | Category    | Level   |
 > | ----------- | ----------- | ------- |
 > | [Sonic go Brr](./Web/README.md#1--sonic-go-brr) | web |easy    |
 > | [blobber](./Web/README.md#2--blobber) | web |meduim    |
