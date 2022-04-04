@@ -66,7 +66,7 @@ flag : **shctf{2_explor3_fronti3r}**
 
 when we visit the url it create a seq token , and every refresh a bit appears : 
 
-<center><img src="../images/Mysterious_Broadcast.png"></img></center>
+<center><img src="../images/Mysterious_broadcast.PNG"></img></center>
 
 let's try to get all the bits : 
 
