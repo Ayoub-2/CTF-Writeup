@@ -6,6 +6,9 @@
 - Points : 100
 - link : nc 142.93.209.130 9843
 
+<center><img src="images/jail3.PNG"></center>
+
+
 Same substitution problem, but we have also another problem: we are limited to input string of 10 character max.
 
 It's a little bit annoying, but I split the exploit in several parts:
