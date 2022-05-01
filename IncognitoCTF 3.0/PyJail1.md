@@ -5,6 +5,7 @@
 - Points : 100
 - link : nc 142.93.209.130 13010
 
+<center><img src="images/jail1.PNG"></center>
 
 This was the first time I tried to solve a Python Jail escape, so the first thing I did was to search a "Python Jail escape cheatsheet", and I found [https://book.hacktricks.xyz/misc/basic-python/bypass-python-sandboxes](this) (I used it throught all the PyJail challenges).
 
