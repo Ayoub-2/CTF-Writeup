@@ -4,8 +4,8 @@ Serie of writeup for challenges , especially web and misc categories :
 
 > | name        | Ctftime event |    
 > | ----------- | ----------- 
-> | [knight CTF](./KnightCTF/README.md) | https://ctftime.org/event/1545 |
+> | [Knight CTF](./KnightCTF/README.md) | https://ctftime.org/event/1545 |
 > | [Utctf](./UTCTF/README.md)       | https://ctftime.org/event/1582 |
-> | [zain CTF](./ZainCTF/README.md)       | https://cybertalents.com/competitions/zain-ctf-2022 |
+> | [Zain CTF](./ZainCTF/README.md)       | https://cybertalents.com/competitions/zain-ctf-2022 |
 > | [Space Heroes CTF](./SpaceHerosCTF/README.md)       | https://ctftime.org/event/1567 |
 > | [Incognito CTF 3.0](./IncognitoCTF%203.0/README.md)       | https://ctftime.org/event/1632 |
