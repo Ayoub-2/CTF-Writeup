@@ -7,7 +7,7 @@
 - Level: easy
 - Points : 50
 
-<center><img src="../images/auth-skip.png"></center>
+<center><img src="../images/auth-skip.PNG"></center>
 
 Easy challenges, just login with cookie user : admin and you get the flag
 
@@ -31,7 +31,7 @@ print(r.text)
 - Points : 50
 
 
-<center><img src="../images/crumbs.png"></center>
+<center><img src="../images/crumbs.PNG"></center>
 
 if we look at teh source code : 
 
@@ -82,7 +82,7 @@ while True :
 - Level: medium 
 - Points : 70
 
-<center><img src="../images/sardins.png"></center>
+<center><img src="../images/sardins.PNG"></center>
 
 As the name says , it is an XSS vulnerabilty , we just need to bypass some checks , the final payload is : 
 
@@ -99,13 +99,13 @@ As the name says , it is an XSS vulnerabilty , we just need to bypass some check
 - Level: medium
 - Points : 130
 
-<center><img src="../images/art-gallery.png"></center>
+<center><img src="../images/art-gallery.PNG"></center>
 
 this one consist of a local file inclusion, and we try too get the **.git** folder, I used git-dump `git-dumper https://art-gallery.web.actf.co/gallery?member=../.git/ outpu -r 4` 
 
 and checking logs I found the flag
 
-<center><img src="../images/ag-poc.png"></center>
+<center><img src="../images/ag-poc.PNG"></center>
 
 ## 5- School Unblocker
 #### about :
@@ -113,7 +113,7 @@ and checking logs I found the flag
 - Level: medium
 - Points : 130
 
-<center><img src="../images/school.png"></center>
+<center><img src="../images/school.PNG"></center>
 
 It's a website thet gets you the content of any url , so we try to get the /flag , using a Redirect requests 
 
@@ -140,7 +140,7 @@ print(r.text)
 - Level: hard
 - Points : 130
 
-<center><img src="../images/vault.png"></center>
+<center><img src="../images/vault.PNG"></center>
 
 solution code : 
 ```python
@@ -174,7 +174,7 @@ if __name__ == '__main__':
 - Level: hard
 - Points : 130
 
-<center><img src="../images/noflag.png"></center>
+<center><img src="../images/noflag.PNG"></center>
 
 an obvious sql injection but teh flag isn't in a databases , we will try to escalate to an RCE , with ATTACH in sqlite  , the payload is as follows : 
 

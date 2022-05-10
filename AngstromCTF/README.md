@@ -16,6 +16,6 @@ Team : **Ze3boola**
 
 Rank : **276th / 1319**
 
-<center><img src="images/rank.png"></center>
+<center><img src="./images/rank.PNG"></center>
 
 </br>
