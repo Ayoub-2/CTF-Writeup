@@ -234,6 +234,6 @@ if (_xxf0(_xxg0, word[2])) {
 }
 ```
 
-put it in the console (we are not analyzinf before getting the general idea) and we got the flag  :) : 
+put it in the console (we are not analyzing before getting the general idea) and we got the flag  :) : 
 
 <center><img src="../images/flag_obfjustu.png"></img></center>

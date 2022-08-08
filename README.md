@@ -21,3 +21,5 @@ Serie of writeup for challenges , especially web and misc categories :
 > | [Tenable CTF 2022](./TenableCTF/README.md)       | https://ctftime.org/event/1668 |
 > | | | |
 > | [BDSec CTF 2022](./BDSecCTF/README.md)       | https://ctftime.org/event/1699 |
+> | | | |
+> | [Cor CTF 2022](./CorCTF/README.md)       | https://ctftime.org/event/1656/ |

