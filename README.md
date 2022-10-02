@@ -23,3 +23,5 @@ Serie of writeup for challenges , especially web and misc categories :
 > | [BDSec CTF 2022](./BDSecCTF/README.md)       | https://ctftime.org/event/1699 |
 > | | | |
 > | [Cor CTF 2022](./CorCTF/README.md)       | https://ctftime.org/event/1656/ |
+> | | | |
+> | [Sekai CTF 2022](./SekaiCTF/README.md)       | https://ctftime.org/event/1619/ |
